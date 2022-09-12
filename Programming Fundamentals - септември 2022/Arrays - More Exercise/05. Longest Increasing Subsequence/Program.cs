@@ -19,30 +19,28 @@ namespace LongestIncreasingSubsequence
             int maxLength = 0;
             int lastIndex = -1;
 
-            // обхождам поредицата
-            for (int i = 0; i < sequence.Length; i++)
+            
+            for (int index = 0; index < sequence.Length; index++)
             {
-                // len && prev съответно = 1 && -1
-                len[i] = 1;
-                prev[i] = -1;
-
-                // обхождам поредицата и сравнявам за най-добра дължина на поредица
-                // if i == j -> цикъл j няма да се изпълни
-                for (int j = 0; j < i; j++)
+                
+                len[index] = 1;
+                prev[index] = -1;
+                               
+                
+                for (int j = 0; j < index; j++)
                 {
-                    // ако текущата стойност j/в ляво/ е по-малка от i/в дясно/
-                    // && текущия брой елементи j >= броя елементи на i -> броя на елементите /поредицата/ ще нараства
-                    if (sequence[j] < sequence[i] && len[j] >= len[i])
+                    
+                    if (sequence[j] < sequence[index] && len[j] >= len[index])
                     {
-                        len[i] = 1 + len[j];
-                        prev[i] = j; // запазваме индекса на най добрия елемент от поредицата
+                        len[index] = 1 + len[j];
+                        prev[index] = j; 
                     }
                 }
-                // запазвам максималния брой елементи
-                if (len[i] > maxLength)
+                
+                if (len[index] > maxLength)
                 {
-                    maxLength = len[i];
-                    lastIndex = i;
+                    maxLength = len[index];
+                    lastIndex = index;
                 }
             }
             lis = new int[maxLength];
