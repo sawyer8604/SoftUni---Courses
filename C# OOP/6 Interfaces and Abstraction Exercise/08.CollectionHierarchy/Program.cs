@@ -52,6 +52,7 @@ namespace _08.CollectionHierarchy
 
             Console.WriteLine(string.Join(" ", removedItems["AddRemoveCollection"]));
             Console.WriteLine(string.Join(" ", removedItems["MyList"]));
+            //
         }
     }
 }
