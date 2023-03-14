@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PointInRectangle
 {
-    public class Rectangle
+    public class Rectangle : IPointContainable
     {
         public Rectangle(int top, int left, int bottom, int right)
         {

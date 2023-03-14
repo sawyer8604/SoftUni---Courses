@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PointInRectangle
 {
@@ -6,18 +7,23 @@ namespace PointInRectangle
     {
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Rectangle(3, 1, 1, 3);
+            var figures = new List<IPointContainable>();
 
-            Console.WriteLine(rectangle.Contains(new Point(2, 2))); // True
-            Console.WriteLine(rectangle.Contains(new Point(3, 1))); // True
-            Console.WriteLine(rectangle.Contains(new Point(3, 4))); // False
+            figures.Add(new Rectangle(3, 1, 1, 3));
+            figures.Add(new Circle(0, 0, 2));
 
-            Circle circle = new Circle(0, 0, 2);
+            foreach (var figure in figures)
+            {
+                Console.WriteLine(figure.Contains(new Point(2, 2))); 
+                Console.WriteLine(figure.Contains(new Point(3, 1))); 
+                Console.WriteLine(figure.Contains(new Point(3, 4)));               
+                Console.WriteLine(figure.Contains(new Point(0, 0))); 
+                Console.WriteLine(figure.Contains(new Point(0, 2))); 
+                Console.WriteLine(figure.Contains(new Point(2, 0))); 
+                Console.WriteLine(figure.Contains(new Point(0, 3)));
+                Console.WriteLine();
 
-            Console.WriteLine(circle.Contains(new Point(0, 0))); // True
-            Console.WriteLine(circle.Contains(new Point(0, 2))); // True
-            Console.WriteLine(circle.Contains(new Point(2, 0))); // True
-            Console.WriteLine(circle.Contains(new Point(0, 3))); // False
+            }
 
         }
     }

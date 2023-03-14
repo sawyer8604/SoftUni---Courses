@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PointInRectangle
 {
-    public class Circle
+    public class Circle : IPointContainable
     {
         public Circle(int x, int y, int radius)
         {
