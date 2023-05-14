@@ -1,0 +1,31 @@
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, serif;
+}
+
+th{
+    background-color: lightblue;
+}
+
+th, td{
+
+    width: 144px;
+    height: 32px;   
+    border: solid 1px #ccc;
+    padding-left: 5px;
+}
+
+blockquote{
+    border-left: solid rgb(221, 221, 221);
+    font: italic;
+    padding-left: 10px;
+}
+
+.last{
+    text-align: right;
+}

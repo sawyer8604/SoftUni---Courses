@@ -1,0 +1,20 @@
+/* TODO: style the html */
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+body{
+    font-family: Montserrat, sans-serif;
+    padding: 16px;
+}
+th{
+    background-color: lightblue;
+}
+
+th, td{
+
+    border-left: solid rgb(221, 221, 221);
+    font: italic;
+    padding-left: 10px;
+}
+.last{
+    text-align: right;
+}
