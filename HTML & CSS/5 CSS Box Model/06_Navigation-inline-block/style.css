@@ -1,0 +1,19 @@
+html{
+    font-family: Helvetica, sans-serif;
+   
+}
+body{
+    margin: 50px;
+}
+header nav, h1, ul{
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+}
+a{
+    color: darkgreen;
+    margin: 20px;
+    text-decoration: none;
+}
