@@ -1,0 +1,31 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+}
+header{
+   
+    display: flex;    
+    border-bottom: 2px solid rgb(0,0,0);  
+}
+
+header nav{
+    
+    margin-left: auto;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;   
+    gap: 20px;
+}
+a{
+    
+    color:  rgb(0, 153, 0);
+    text-decoration: none;
+    
+}
+

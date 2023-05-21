@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    
+}
+span{
+    border: 1px solid black;
+}
+.week{
+    display: flex;
+    flex-grow: 8;
+    flex-direction: column;
+    
+    
+}
+.week div{
+    display: flex;
+     
+    
+}
+.week div span{
+    flex-grow: 1;   
+}
+.notes{
+    flex-direction: column;  
+    display: flex;
+    flex-grow: 2;
+       
+}
+
+.notes span{
+  
+    height: 40px;
+}
+
+
+
+
+
