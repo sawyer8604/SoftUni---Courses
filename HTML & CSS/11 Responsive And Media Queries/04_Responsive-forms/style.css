@@ -1,0 +1,47 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+html{
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    background-color: rgb(241, 235, 235);
+    width: 20vw;
+    padding: 30px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 6px;
+    
+}
+legend p{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;  
+    
+}
+fieldset{
+    border: 1px solid black;
+    width: 30%;
+    padding: 6px;
+    text-align: left;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 6px;
+}
+button{
+    margin-top: 10px;
+    background-color: rgb(42, 41, 41);
+    color: white;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+p{
+    position: relative;
+}
+span{
+    position: absolute;
+    left: 110px;
+   
+}
