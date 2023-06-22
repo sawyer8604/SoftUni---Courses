@@ -1,6 +1,14 @@
-function Movie(props){
-    return(
+import React from "react";
 
+function Movie(props){
+    console.log("Movie")
+
+    let render = 0;
+
+    
+
+    return(
+        
         <article>
             <h3>{props.title}</h3>
             <h5>{props.year}</h5>
@@ -8,7 +16,7 @@ function Movie(props){
                 <li>{props.actors[0]}</li>
                 <li>{props.actors[1]}</li>
             </ul>
-            <p>{props.actors}</p>
+            
             </article>
     );
 }

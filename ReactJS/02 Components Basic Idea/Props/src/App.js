@@ -8,11 +8,13 @@ function App() {
     {title: 'Harry Potter', year: 2003, cast: ['Harry', 'Ron', 'Emma']},
     {title: 'Matrix', year: 1999, cast: ['Neo', 'Morpheus', 'Trinity']}
   ]
+  console.log("App");
+     
   return (
     <div className = "App">
       
       <MovieList movies={movies}/>
-     
+      
     </div>
   );
 }
