@@ -38,9 +38,12 @@ const Counter = (props) => {
     return(
 
         <div>
-            <h3>{counter === 0 ? 'Counter': title }: {counter}</h3>
-            <button onClick={incrementCounterHandler}>+</button>
-            <button onClick={decrementCounterHandler}>-</button>
+            <p style={{fontSize: Math.max(counter, 1) + 'em'}}>{counter === 0 ? 'Counter': title }: {counter}</p>
+            {props.canReset && <button onClick={incrementCounterHandler}>+</button>}
+            { counter < 10 ?
+                <button onClick={decrementCounterHandler}>-</button>
+                : null
+                }
             <button onClick={resetCounterHandler}>0</button>
 
 
